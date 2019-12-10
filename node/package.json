@@ -2,12 +2,14 @@
   "name": "File_node_graphql",
   "version": "0.0.1",
   "dependencies": {
-    "express": "4.13.3",
-    "multer": "1.1.0"
+    "express": "^4.17.1",
+    "multer": "1.1.0",
+    "request": "^2.88.0",
+    "restler": "^3.4.0"
   },
   "devDependencies": {
+    "mocha": "^6.2.2",
     "should": "~7.1.0",
-    "mocha": "~2.3.3",
     "supertest": "~1.1.0"
   }
 }
