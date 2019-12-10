@@ -37,7 +37,7 @@ app.post('/api/photo',function(req,res){
                   if(err) {
                       console.log('oh no!', err);
                   } else {
-                    var req = request.post('http://localhost:5000/api/photo', function (err, resp, body) {
+                    var req = request.post('http://35.193.16.226:5000/api/photo', function (err, resp, body) {
             if (err) {
               console.log(err);
             } else {

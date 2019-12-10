@@ -3,7 +3,7 @@ var multer  =   require('multer');
 var exec = require('child_process').exec;
 var fs = require('fs');
 var zipFolder = require('zip-folder');
-
+var unzipper=require('unzipper')
 var ffmpeg = require("ffmpeg")
 var app         =   express();
 var storage =   multer.diskStorage({
@@ -26,7 +26,8 @@ app.post('/api/photo',function(req,res){
           console.log(err);
             return res.end("Error uploading file.");
         }
-
+        fs.createReadStream('./uploads/frames.zip')
+  .pipe(unzipper.Extract({ path: './uploads/frames' }));
         
       
 

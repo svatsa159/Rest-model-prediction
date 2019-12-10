@@ -29,11 +29,12 @@ app.post('/api/photo',function(req,res){
         dir = exec("ffmpeg -ss 0 -i ./uploads/Result.mp4 -t 30 -c copy ./uploads/Final.mp4", function(err, stdout, stderr) {
           if (err) {
             // should have err.code here?  
+            console.log(err)
           }
           console.log(stdout);
         });
        
-        var req = request.post('http://localhost:4000/api/photo', function (err, resp, body) {
+        var req = request.post('http://130.211.228.187:4000/api/photo', function (err, resp, body) {
           if (err) {
             console.log(err);
           } else {

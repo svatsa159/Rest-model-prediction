@@ -5,6 +5,7 @@
     "express": "4.13.3",
     "ffmpeg": "0.0.4",
     "multer": "1.1.0",
+    "unzipper": "^0.10.5",
     "zip-folder": "^1.0.0"
   },
   "devDependencies": {
