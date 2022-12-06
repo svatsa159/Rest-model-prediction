@@ -2,7 +2,7 @@
   "name": "File_node_graphql",
   "version": "0.0.1",
   "dependencies": {
-    "express": "4.13.3",
+    "express": "4.17.3",
     "ffmpeg": "0.0.4",
     "multer": "1.1.0",
     "unzipper": "^0.10.5",
