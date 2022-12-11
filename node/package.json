@@ -2,7 +2,7 @@
   "name": "File_node_graphql",
   "version": "0.0.1",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "multer": "1.1.0",
     "request": "^2.88.0",
     "restler": "^3.4.0"
